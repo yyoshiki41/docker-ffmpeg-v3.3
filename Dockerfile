@@ -31,7 +31,7 @@ RUN cd ffmpeg-3.3.6 \
     && make \
     && make install
 
-RUN cp "${PREFIX}/bin/*" /usr/local/bin/ \
-    && cp -r "${PREFIX}/share/ffmpeg" /usr/local/share/
+RUN cp "${PREFIX}"/bin/* /usr/local/bin/ \
+    && cp -r "${PREFIX}"/share/ffmpeg /usr/local/share/
 
 CMD ["/bin/bash"]
